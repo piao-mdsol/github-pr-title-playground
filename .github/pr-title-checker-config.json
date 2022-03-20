@@ -4,12 +4,10 @@
     "color": "EEEEEE"
   },
   "CHECKS": {
-    "regexp": "\\[MCC-\\d+\\] ",
-    "regexpFlags": ""
+    "regexp": "(\\[MCC-\\d+\\] )|^(?!\\[?[mM][cC][cC].\\d+\\]?).*"
   },
   "MESSAGES": {
-    "success": "PR title 👍",
-    "failure": "PR title failed",
-    "notice": "Title should be in the format of `[MCC-XXXXXX] You Title...`"
+    "success": "PR title follows the format 👍",
+    "failure": "PR title should be in the format of `[MCC-XXXXXX] Your Title...`"
   }
 }
